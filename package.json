@@ -36,7 +36,8 @@
   },
   "main":"index.js",
   "keywords":[
-    "mocha"
+    "node_modules/.bin/mocha"
+
     ]
  
 }
