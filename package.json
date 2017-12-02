@@ -6,7 +6,7 @@
     "Douglas Christopher Wilson <doug@somethingdoug.com>",
     "Jonathan Ong <me@jongleberry.com> (http://jongleberry.com)"
   ],
-  "repository": "pillarjs/parseurl",
+  "repository": "GuoLiBin6/parseurl",
   "license": "MIT",
   "devDependencies": {
     "beautify-benchmark": "0.2.4",
@@ -30,11 +30,12 @@
   "engines": {
     "node": ">= 0.8"
   },
-  "scripts": {
-    "bench": "node benchmark/index.js",
-    "lint": "eslint .",
-    "test": "mocha --check-leaks --bail --reporter spec test/",
-    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --check-leaks --reporter dot test/",
-    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --check-leaks --reporter spec test/"
-  }
+  "scripts":{
+    "test":"mocha"
+  },
+  "main":"index.js",
+  "keywords":[
+    "mocha"
+    ]
+ 
 }
