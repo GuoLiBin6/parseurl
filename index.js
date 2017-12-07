@@ -22,7 +22,7 @@ var Url = url.Url;
  */
 
 module.exports = parseurl;  /*将parseurl作为模块暴露出去*/
-module.exports.original = originalurl; /*将originalurl函数作为parseurl的子模块暴露出去*/
+module.exports.original = originalurl; /*将originalurl函数改名为original后暴露出去*/
 
 /**
  * Parse the `req` url with memoization.
@@ -69,7 +69,7 @@ function parseurl (req) {
 
 function originalurl (req) {
   //console.log('进入originalurl函数');
-  //声明变量url，赋值req.originalUrl第一次进行解析时，req.original为 undifined
+  //声明变量url，赋值req.originalUrl
   var url = req.originalUrl;
   //判断url是否为字符串，若不是字符串则跳转parseurl(req)函数继续解析
   if (typeof url !== 'string') {
